@@ -5,6 +5,9 @@ const express = require("express");
 const hbs = require("hbs");
 const app = express();
 
+//Heroku port number
+const port = process.env.PORT || 3000;
+
 //Define path for Express config
 const dirpath = path.join(__dirname, "../public");
 const viewpath = path.join(__dirname, "../templates/views");
@@ -84,6 +87,6 @@ app.get("*", (req, res) => {
   });
 });
 
-app.listen(3000, () => {
+app.listen(port, () => {
   console.log("The Server is runing on 3000.");
 });
