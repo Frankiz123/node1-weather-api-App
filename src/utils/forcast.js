@@ -56,7 +56,7 @@ const forcast = (latitude, longitude, callback) => {
           body.currently.precipProbability +
           "% chnace of rain. The High Temperature will be : " +
           body.daily.data[0].temperatureHigh +
-          " The Lowest Temperature will be : " +
+          ". The Lowest Temperature will be : " +
           body.daily.data[0].temperatureLow
       );
     }
