@@ -54,7 +54,10 @@ const forcast = (latitude, longitude, callback) => {
           body.currently.temperature +
           " degree out there. There is a " +
           body.currently.precipProbability +
-          "% chnace of rain."
+          "% chnace of rain. The High Temperature will be : " +
+          body.daily.data[0].temperatureHigh +
+          " The Lowest Temperature will be : " +
+          body.daily.data[0].temperatureLow
       );
     }
   });
